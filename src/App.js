@@ -23,6 +23,7 @@ class App extends Component {
             return { monsters: users };
           }
           // () => {
+          //   console.log("--------------", users.id);
           //   console.log(this.state);
           // }
         )
@@ -45,7 +46,7 @@ class App extends Component {
     const { onSearchChange } = this;
 
     const filteredMonsters = monsters.filter((monster) => {
-      //console.log("Inside Filtered Monsters", monster.name, searchField);
+      //console.log("Inside Filtered Monsters", monster.id);
       return monster.name.toLocaleLowerCase().includes(searchField);
     });
     return (
