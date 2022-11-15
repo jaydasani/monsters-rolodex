@@ -6,7 +6,7 @@ import "./App.css";
 
 class App extends Component {
   constructor() {
-    console.log("constructor");
+    console.log("inside constructor");
     super(); //calling constructor of extended class here Component
     this.state = {
       monsters: [],
